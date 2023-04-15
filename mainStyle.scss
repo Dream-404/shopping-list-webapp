@@ -1,0 +1,73 @@
+$mainFontStyle: "Oswald", sans-serif;
+$mainBackgroundColor: #975df6;
+$BoxShadow: 5px 8px 5px rgba(0, 0, 0, 0.5);
+
+%text-button {
+  border-radius: 7px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $mainFontStyle;
+  background-color: $mainBackgroundColor;
+  user-select: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 10px auto;
+}
+
+.h2-main-titile {
+  text-align: center;
+  font-weight: 700;
+}
+
+img {
+  width: 150px;
+  margin: 10px auto;
+}
+
+input {
+  @extend %text-button;
+  border: 0;
+  margin: 25px 0 10px;
+}
+
+button {
+  @extend %text-button;
+  background-color: #ff5f93;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  max-width: 320px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  flex-grow: 1;
+  background-color: beige;
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  cursor: pointer;
+  &:hover {
+    background-color: red;
+  }
+}
