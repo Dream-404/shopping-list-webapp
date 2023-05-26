@@ -1,5 +1,5 @@
 $mainFontStyle: "Oswald", sans-serif;
-$mainBackgroundColor: #975df6;
+$mainBackgroundColor: "skyblue";
 $BoxShadow: 5px 8px 5px rgba(0, 0, 0, 0.5);
 
 %text-button {
@@ -68,6 +68,6 @@ ul li {
   user-select: none;
   cursor: pointer;
   &:hover {
-    background-color: red;
+    background-color: blue;
   }
 }
